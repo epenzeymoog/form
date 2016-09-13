@@ -1,0 +1,204 @@
+---
+layout: default
+---
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Identity Form</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="images/spy.ico">
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,300italic,100italic,100,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<header>
+  <h1>Welcome, new recruit.</h1>
+  <h2>Your placement city is: CHICAGO</h2>
+  <h2>Your task is now to create the new identity you will wear in order to complete your missions.</h2>
+  <h4>These details will be sent to HQ and used to create all the artifacts of your new identity and ensure that you appear to be a normal civilian.</h4>
+  <h2>Fill out the form with the details of your new identity.</h2>
+</header>
+
+<form>
+  <section class="question">
+    <p>Name Information:</p>
+      <article class="row">
+        <p>First name:</p>
+          <input type="text" name="firstname"><br>
+        <p>Middle name:</p>
+          <input type="text" name="middlename">
+        <p>Last name:</p>
+          <input type="text" name="lastname">
+        <p>Nickname:</p>
+          <input type="text" name="nickname">
+      </article>
+  </section>
+
+  <section class="question">
+    <p>Birth Information:</p>
+      <article class="row">
+        <p>Birthdate:</p>
+          <input type="datetime" name="bdaytime">
+        <p>Time of birth:</p>
+          <input type="time" name="bdaytime">
+<!--         <p>Birthday (date and time):</p>      ///browser support not strong enough to use this input type.
+          <input type="datetime-local" name="bdaytime"> -->
+      </article>
+  </section>
+
+  <section class="question">
+    <p>Online accounts:</p>
+      <article class="row">
+        <p>Email address:</p>
+          <input type="email" name="email">
+        <p>Facebook User name:</p>
+          <input type="text" name="username"><br>
+        <p>Facebook password:</p>
+          <input type="password" name="psw">
+      </article>
+  </section>
+
+  <section class="question">
+    <p>Desired cell phone number:</p>
+      <input type="tel" name="usrtel">
+  </section>
+
+  <section class="question">
+    <p>My favorite color is:</p>
+      <input type="color" name="favcolor">
+    </section>
+
+<section class="question">
+  <p>Personality Traits</p>
+  <p>Choose the option that best fits your personality.</p>
+  <p>I am:</p>
+    <article class="row">
+      <input type="radio" name="social" value="outgoing">Outgoing and social<br>
+      <input type="radio" name="social" value="somewhat">A bit reserved but friendly<br>
+      <input type="radio" name="social" value="not">Slow to warm up to new people<br>
+    </article>
+    <article class="row">
+      <input type="radio" name="decisions" value="quick">Quick to make decisions. I go with my gut.<br>
+      <input type="radio" name="decisions" value="moderate">Slow to make decision. I need to weight out the pros and cons of all the outcomes.<br>
+      <input type="radio" name="decisions" value="slow">Uncomfortable making decisions without soliciting input from others<br>
+    </article>
+      <article class="row">
+      <input type="radio" name="religion" value="religious">Deeply religious<br>
+      <input type="radio" name="religion" value="spiritual">Spiritual but not religious<br>
+      <input type="radio" name="religion" value="not">Agnostic or athiest<br>
+    </article>
+</section>
+
+<section class="question">
+  <p>Check all options you use for transportation:</p>
+    <article class="row">
+      <input type="checkbox" name="vehicle1" value="Car">Drive my car<br>
+      <input type="checkbox" name="vehicle2" value="Car-share">Uber, Lyft, ect<br>
+      <input type="checkbox" name="vehicle3" value="Public-transport">Take public transportation<br>
+      <input type="checkbox" name="vehicle4" value="Bike">Bike<br>
+      <input type="checkbox" name="vehicle5" value="Skateboard">Skateboard<br>
+      <input type="checkbox" name="vehicle6" value="Car">Moped/Scooter<br>
+    </article>
+</section>
+
+<section class="question">
+  <p>I am a member of the following organizations:</p>
+    <article class="row">
+    <input type="checkbox" name="member1" value="Library">The local library<br>
+    <input type="checkbox" name="member2" value="Co-op">A food co-op<br>
+    <input type="checkbox" name="member3" value="Social-justice">A political or social justice group<br>
+    <input type="checkbox" name="member4" value="Bike">A neighborhood association<br>
+</article>
+</section>
+
+  I rate the value of exercise as (1 is not important; 5 is very important):
+  <input type="number" name="quantity" min="1" max="5">
+
+  I rate the value of visiting museums and other cultural centers as (1 is not important; 5 is very important):
+  <input type="number" name="quantity" min="1" max="5">
+
+  I rate the value of living in a popular part of town as (1 is not important; 5 is very important):
+  <input type="number" name="quantity" min="1" max="5">
+
+<section class="question">
+  <p>Hobbies</p>
+    <article class="row">
+      <p>My favorite hobby is:</p>
+        <input type="text" name="hobby">
+      <p>And I have been doing it for</p>
+        <input type="number" name="points" min="0" max="100" step="10" value="1"><p>years.</p>
+    </article>
+    <article class="row">
+      <p>My second favorite hobby is:</p>
+        <input type="text" name="hobby">
+      <p>And I have been doing it for</p>
+        <input type="number" name="points" min="0" max="100" step="10" value="1"><p>years.</p>
+    </article>
+    <article class="row">
+      <p>My third favorite hobby is:</p>
+        <input type="text" name="hobby">
+      <p>And I have been doing it for</p>
+        <input type="number" name="points" min="0" max="100" step="10" value="1"><p>years.</p>
+    </article>
+    <article class="row">
+      <p>I am very concerned with the ability to continue my hobbies while on assignment:</p>
+        <p>not concerned</p> 
+          <input type="range" name="points" min="0" max="10">
+        <p>very concerned</p>
+  </section>
+  
+
+  <section class="question">
+    <p>You will receive a call once a week from Command.</p>
+    <p>Select the day and time for this call:</p>
+      <article class="row">
+        <p>Day of the week:</p>
+          <input type="text">
+        <p>Time of day:</p>
+          <input type="time" name="usr_time">
+      </article>
+  </section>
+
+  <section class="question">
+    <p>You will receive one week off while on assignment.</p>
+      <article class="row">
+        <p>Select a week of the year you will take off from your assignment:</p>
+          <input type="week" name="week_year">
+      </article>
+  </section>
+
+  
+  <section class="question">
+    <p>You will have an online portfolio created for your identity.</p>
+      <article class="row">
+        <p>Enter the url of an online portfolio that you like:</p>
+          <input type="url" name="homepage">
+      </article>
+  </section>
+
+<!--   Search Google:   ///this input type is only useful on mobile devices.
+  <input type="search" name="googlesearch"> -->
+
+<section class="black">
+  <input type="button" onclick="alert('Your information has been analyzed and deemed acceptable. Please submit your information using the submit button.')" value="Check over my information">
+</section>
+
+<p>Please enter today's date:</p>
+
+<section class="black">
+  <input type="date" name="bday">
+  <input type="submit" value="Submit"==>
+</section>
+
+<footer>
+  <h1>End of form. Submit and await futher orders.</h1>
+</footer>
+
+</form>
+</body>
+</html>
